@@ -1,9 +1,9 @@
 # sh_learn
-learn sh on my way
+This repostories is created for learn shell.
 
-#AWK usage
-
-##AWK remove blank
+## AWK usage
+awk is used for generate format data.
+### AWK remove blank
 sub(/^[[:blank:]]*/,"",变量)  是去掉变量左边的空白符
 sub(/[[:blank:]]*$/,"",变量) 是去掉变量右边的空白符
 gsub(/[[:blank:]]*/,"",变量) 是去掉变量中所有的空白符
