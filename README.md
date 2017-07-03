@@ -17,3 +17,12 @@ sub(/[[:blank:]]*$/,"",$0);print "|" $0 "|";
 gsub(/[[:blank:]]*/,"",$0);print "/" $0 "/";
 }'
 ```
+
+
+## explorer.exe
+explorer is used under win. and the main function 
+is open a folder.
+e.g.
+```
+explorer .
+```
