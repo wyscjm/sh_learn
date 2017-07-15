@@ -26,3 +26,9 @@ e.g.
 ```
 explorer .
 ```
+
+## generate repeat code
+save the names in data.txt then use the below cmd.
+```
+awk '{sub("^ *","");sub(" *$","");printf "#define XXX__bo%s (%s_read() == True)\n",$0,$0}' data.txt
+```
