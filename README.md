@@ -32,3 +32,15 @@ save the names in data.txt then use the below cmd.
 ```
 awk '{sub("^ *","");sub(" *$","");printf "#define XXX__bo%s (%s_read() == True)\n",$0,$0}' data.txt
 ```
+
+## format file name upper or lower case
+format the file name from upper case:A-Z to lower case:a-z.
+```
+#!/bin/sh
+cd ./adapt
+for each in *; do mv -i $each `echo $each|tr A-Z a-z`;done 
+cd ../core
+for each in *; do mv -i $each `echo $each|tr A-Z a-z`;done 
+cd ../doc
+for each in *; do mv -i $each `echo $each|tr A-Z a-z`;done 
+```
