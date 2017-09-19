@@ -44,3 +44,10 @@ for each in *; do mv -i $each `echo $each|tr A-Z a-z`;done
 cd ../doc
 for each in *; do mv -i $each `echo $each|tr A-Z a-z`;done 
 ```
+
+##  check the lines of the files in specific folder
+```
+# wc adapt/* src/*
+# [lines] [words] [bytes] [filename]
+
+```
