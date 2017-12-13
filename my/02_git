@@ -1,0 +1,13 @@
+# sync the tags with remote
+``` shell
+#! /bin/bash
+base_dir="/home/repo/pub"
+for name in "linux" "xen" "qemu"
+do
+        cd $base_dir/${name}-local.git/
+        git tag -l | xargs git tag -d    #delete local tag(s)
+        git fetch origin --prune   #fetch from remote repo
+        git fetch origin --tags   #remote tags are fetched
+        sleep 10
+done
+```
