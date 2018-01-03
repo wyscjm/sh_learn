@@ -17,7 +17,10 @@ sub(/[[:blank:]]*$/,"",$0);print "|" $0 "|";
 gsub(/[[:blank:]]*/,"",$0);print "/" $0 "/";
 }'
 ```
-
+### with cat
+``` shell
+cat 1.txt | awk '{print$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17}' > car_ee.txt
+```
 
 ## explorer.exe
 explorer is used under win. and the main function 
