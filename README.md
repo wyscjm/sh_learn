@@ -22,6 +22,20 @@ gsub(/[[:blank:]]*/,"",$0);print "/" $0 "/";
 cat 1.txt | awk '{print$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17}' > car_ee.txt
 ```
 
+### if else
+example:
+``` shell
+awk '{if ($1==1) print "A"; else if ($1==2) print "B"; else print "C"}'
+```
+
+#### merge the line base on length 
+merge the line that length larger than 50 with its next line.
+``` shell
+awk '{if( length($0)>50 ) {tmp=$0 ; getline ;print tmp" "$0}}' abc.DSK >out.txt
+```
+
+
+
 ## explorer.exe
 explorer is used under win. and the main function 
 is open a folder.
